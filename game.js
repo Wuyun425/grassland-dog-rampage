@@ -30,17 +30,17 @@ function preload() {
 }
 
 function create() {
-    // 建立靜態平台群組
+    
     platforms = this.physics.add.staticGroup();
     platforms.create(400, 580, 'ground'); 
 
-    // 玩家
+    
     player = this.physics.add.sprite(100, 450, 'player');
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
     this.physics.add.collider(player, platforms); 
 
-    // 狗怪
+    
     dog = this.physics.add.sprite(600, 450, 'dog');
     dog.setBounce(0.2);
     dog.setCollideWorldBounds(true);
